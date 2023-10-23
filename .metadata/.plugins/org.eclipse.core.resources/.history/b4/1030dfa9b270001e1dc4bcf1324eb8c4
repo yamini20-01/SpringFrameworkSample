@@ -1,0 +1,24 @@
+package com.springproject.SpringUsingMaven;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+   /*     Car c=new Car();
+        c.drive();
+        Bike b=new Bike();  
+        b.drive();
+   */
+    /*	Vehicle v=new Car();
+    	v.drive();
+    */
+    	ApplicationContext context =new ClassPathXmlApplicationContext();
+    	Vehicle v=(Vehicle)context.getBean("vehicle");
+    }
+}

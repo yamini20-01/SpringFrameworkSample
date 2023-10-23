@@ -1,0 +1,7 @@
+package com.springproject.SpringUsingMaven;
+
+public class Car {
+	public void drive() {
+		System.out.println("Car drives");
+	}
+}
